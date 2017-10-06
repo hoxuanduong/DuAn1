@@ -1,0 +1,17 @@
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\bin\Debug\DuAn1.exe.config
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\bin\Debug\DuAn1.exe
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\bin\Debug\DuAn1.pdb
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\MainWindow.g.cs
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\App.g.cs
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1_MarkupCompile.cache
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1_MarkupCompile.lref
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\MainWindow.baml
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.g.resources
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Properties.Resources.resources
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csproj.GenerateResource.Cache
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.exe
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.pdb
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csprojResolveAssemblyReference.cache
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\Dictionary1.baml
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\AddContact.g.cs
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\AddContact.baml
