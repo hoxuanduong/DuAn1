@@ -18,6 +18,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Serialization;
+using System.Globalization;
+using System.Resources;
 
 namespace DuAn1
 {
@@ -28,13 +30,18 @@ namespace DuAn1
     {
         private ObservableCollection<Person> danhba;
         //   private AddContact addcontact;
-
+        CultureInfo cul;
+        ResourceManager res_man;
 
         public MainWindow()
         {
             InitializeComponent();
 
             this.DataContext = this;
+
+            cul = CultureInfo.CreateSpecificCulture("vi");
+            res_man = new ResourceManager("DuAn1.Lang",Assembly.GetExecutingAssembly());
+            update_lang();
 
             danhba = new ObservableCollection<Person>();
 
@@ -47,6 +54,15 @@ namespace DuAn1
             lbDanhba.ItemsSource = danhba;
         }
 
+        private void update_lang()
+        {
+            this.btDelete.Content = res_man.GetString("_delete", cul);
+            this.btModify.Content = res_man.GetString("_modify", cul);
+            this.btNew.Content = res_man.GetString("_new", cul);
+            this.btSave.Content = res_man.GetString("_save", cul);
+            this.btLoad.Content = res_man.GetString("_load", cul);
+            this.mnsellang.Header = res_man.GetString("_mnsellang", cul);
+        }
         private void btDelete_Click(object sender, RoutedEventArgs e)
         {
             if (lbDanhba.SelectedItem != null)

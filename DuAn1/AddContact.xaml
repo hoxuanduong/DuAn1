@@ -23,9 +23,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
-        <TextBlock Text="Contact's Name:" FontSize="12" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="1"/>
+        <TextBlock Name="tbContact" Text="Contact's Name:" FontSize="12" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="1"/>
         <TextBox Name="tbName" FontSize="12" Grid.Row ="1" Grid.ColumnSpan="3" VerticalAlignment="Center" Margin="1"/>
-        <TextBlock Text="Phone Number:" FontSize="12" Grid.Row ="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="1"/>
+        <TextBlock Name="tbPhoneNumber" Text="Phone Number:" FontSize="12" Grid.Row ="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="1"/>
         <TextBox Name="tbPhone" FontSize="12" Grid.Row ="3" Grid.ColumnSpan="3" VerticalAlignment="Center" Margin="1"/>
         <TextBlock Name="tbImagePath" FontSize="12" Grid.Row ="5" Grid.ColumnSpan="3" VerticalAlignment="Center"/>
         <Button Name="btSelImg" Content="Select Image" Grid.Row="4" Grid.ColumnSpan="2" Width="Auto" Click="btSelImg_Click"/>

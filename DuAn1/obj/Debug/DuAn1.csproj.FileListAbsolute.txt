@@ -15,3 +15,26 @@ C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\Dictiona
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\AddContact.g.cs
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\AddContact.baml
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csprojResolveAssemblyReference.cache
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\bin\Debug\DuAn1.exe.config
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\bin\Debug\DuAn1.exe
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\bin\Debug\DuAn1.pdb
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\AddContact.g.cs
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\MainWindow.g.cs
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\App.g.cs
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1_MarkupCompile.cache
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1_MarkupCompile.lref
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\AddContact.baml
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\Dictionary1.baml
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\MainWindow.baml
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1.g.resources
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1.Properties.Resources.resources
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1.csproj.GenerateResource.Cache
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1.csproj.CoreCompileInputs.cache
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1.exe
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1.pdb
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\bin\Debug\en\DuAn1.resources.dll
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\bin\Debug\vi\DuAn1.resources.dll
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1.Lang.en.resources
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1.Lang.vi.resources
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\en\DuAn1.resources.dll
+C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\vi\DuAn1.resources.dll
