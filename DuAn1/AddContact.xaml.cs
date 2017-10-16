@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -63,6 +64,10 @@ namespace DuAn1
                         Person p = mainwin.lbDanhba.SelectedItem as Person;
                         p.Name = tbName.Text;
                         p.Sdt = tbPhone.Text;
+                        if (!String.IsNullOrEmpty(tbImagePath.Text))
+                        {
+                            p.DisplayImagePath = tbImagePath.Text;
+                        }
                     }
                     catch (Exception exc)
                     {
@@ -90,7 +95,7 @@ namespace DuAn1
                 {
                     try
                     {
-                        danhba.Add(new Person() { Name = tbName.Text, Sdt = tbPhone.Text });
+                        danhba.Add(new Person() { Name = tbName.Text, Sdt = tbPhone.Text, DisplayImagePath = String.IsNullOrEmpty(tbImagePath.Text) ? Person.DefaultImage : tbImagePath.Text });
                     }
                     catch (Exception exc)
                     {
@@ -111,6 +116,18 @@ namespace DuAn1
         {
 
             this.Close();
+        }
+
+        private void btSelImg_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openfile = new OpenFileDialog();
+
+            openfile.Filter = String.Format("{0} (*.jpg)|*.jpg|{1} (*.png)|*.png|{2} (*.*)|*.*", "jpg format", "png format", "all files");
+
+            if (openfile.ShowDialog() == true)
+            {
+                tbImagePath.Text = openfile.FileName;
+            }
         }
     }
 }

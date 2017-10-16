@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListPersonXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Contact>
+    <Person Phone="+491733911278" Name="Duong" DisplayImagePath="Image/no_image_thumb.gif" />
+    <Person Phone="+491712547551" Name="Anha" DisplayImagePath="C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\Image\woman.jpg" />
+    <Person Phone="+491712547551" Name="Hung" DisplayImagePath="Image/no_image_thumb.gif" />
+    <Person Phone="+491712547551" Name="Nguyen" DisplayImagePath="Image/no_image_thumb.gif" />
+    <Person Phone="+491712547551" Name="Viet" DisplayImagePath="Image/no_image_thumb.gif" />
+    <Person Phone="+491712547551" Name="Tung" DisplayImagePath="Image/no_image_thumb.gif" />
+  </Contact>
+</ListPersonXml>

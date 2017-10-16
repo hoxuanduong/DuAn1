@@ -3,6 +3,8 @@
                     xmlns:local="clr-namespace:DuAn1">
     <Style x:Key="Style1" TargetType="Button">
         <Setter Property="Background" Value="Beige"/>
+        <Setter Property="MinWidth" Value="60"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
     </Style>
     
 </ResourceDictionary>

@@ -104,9 +104,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="data.xml" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Image\contact.png" />
+    <Resource Include="Image\no_image_thumb.gif" />
     <Resource Include="Image\Phone.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

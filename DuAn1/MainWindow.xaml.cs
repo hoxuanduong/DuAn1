@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -79,7 +80,7 @@ namespace DuAn1
         {
             SaveFileDialog savefile = new SaveFileDialog();
 
-            savefile.Filter = String.Format("{0} (*.pi)|*.pi|{1} (*.*)|*.*", "DuAn1 Config File", "All Files");
+            savefile.Filter = String.Format("{0} (*.xml)|*.xml|{1} (*.*)|*.*", "DuAn1 Config File", "All Files");
 
             try
             {
@@ -100,6 +101,33 @@ namespace DuAn1
 
         private void btLoad_Click(object sender, RoutedEventArgs e)
         {
+            OpenFileDialog openfile = new OpenFileDialog();
+
+            try
+            {
+                if(openfile.ShowDialog() == true)
+                {
+
+                    string filename = openfile.FileName;
+
+                    if (!String.IsNullOrEmpty(filename))
+                    {
+
+                        ListPersonXml peoplexml = ListPersonXml.LoadFile(filename);
+
+                        if(peoplexml != null)
+                        {
+                            danhba = new ObservableCollection<Person>(peoplexml.people);
+                            lbDanhba.ItemsSource = danhba;
+                            MessageBox.Show(danhba.Count.ToString(), "");
+                        }
+                    }
+
+                }
+            }catch(Exception exc)
+            {
+                MessageBox.Show(exc.ToString(), "");
+            }
 
         }
     }
@@ -111,10 +139,29 @@ namespace DuAn1
         [XmlArray("Contact"),XmlArrayItem("Person",typeof(Person))]
         public List<Person> people = new List<Person>();
 
-        //public static ListPersonXml LoadFile(Object file)
-        //{
+        public static ListPersonXml LoadFile(string file)
+        {
+            TextReader reader = new StreamReader(file);
 
-        //}
+            XmlSerializer deserializer = new XmlSerializer(typeof(ListPersonXml));
+
+            ListPersonXml value = null;
+
+            try
+            {
+                value = (ListPersonXml)deserializer.Deserialize(reader);
+
+            }catch(Exception exc)
+            {
+                MessageBox.Show(exc.ToString(), "");
+            }
+            finally
+            {
+                reader.Close();
+            }
+
+            return value;
+        }
 
         public void CreateFile(string file, List<Person> inpeople)
         {
@@ -130,14 +177,16 @@ namespace DuAn1
         }
 
 
+
     }
 
 
     public class Person : INotifyPropertyChanged
     {
-
+        public const string DefaultImage = "Image/no_image_thumb.gif";
         private string sdt;
         private string name;
+        private string imagepath;
 
         [XmlAttribute("Phone")]
         public string Sdt
@@ -153,7 +202,10 @@ namespace DuAn1
 
         public Person()
         {
-
+            /// imagepath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            //imagepath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), @"../..");
+            //imagepath += "/Image/no_image_thumb.gif";
+            imagepath = DefaultImage;
         }
 
         [XmlAttribute("Name")]
@@ -165,6 +217,20 @@ namespace DuAn1
             {
                 name = value;
                 NotifyPropertyChanged("Name");
+            }
+        }
+
+        [XmlAttribute("DisplayImagePath")]
+        public string DisplayImagePath
+        {
+            get { return imagepath; }
+
+            set
+            {
+
+                imagepath = value;
+
+                NotifyPropertyChanged("DisplayImagePath");
             }
         }
 

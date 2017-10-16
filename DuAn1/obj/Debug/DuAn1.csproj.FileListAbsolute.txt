@@ -11,7 +11,7 @@ C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Pr
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csproj.GenerateResource.Cache
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.exe
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.pdb
-C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csprojResolveAssemblyReference.cache
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\Dictionary1.baml
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\AddContact.g.cs
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\AddContact.baml
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csprojResolveAssemblyReference.cache

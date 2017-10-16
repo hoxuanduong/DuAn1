@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/contact.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/phone.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/no_image_thumb.gif")]
 
 
