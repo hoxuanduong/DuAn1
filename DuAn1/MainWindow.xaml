@@ -21,8 +21,8 @@
         <ToolBar Height="30" Name="menu">
             <Menu Background="Transparent">
                 <MenuItem Name="mnsellang">
-                    <MenuItem Name="mnvn" Header="tieng viet" IsCheckable="True"/>
-                    <MenuItem Name="mnen" Header="english" IsCheckable="True"/>
+                    <MenuItem Name="mnvn" Header="tieng viet" IsCheckable="True" Checked="Mnvn_OnChecked"/>
+                    <MenuItem Name="mnen" Header="english" IsCheckable="True" Checked="Mnen_OnChecked"/>
                 </MenuItem>
             </Menu>
         </ToolBar>

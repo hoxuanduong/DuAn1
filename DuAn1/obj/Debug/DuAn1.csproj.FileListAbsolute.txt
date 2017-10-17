@@ -38,3 +38,10 @@ C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1.Lang.en.resources
 C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\DuAn1.Lang.vi.resources
 C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\en\DuAn1.resources.dll
 C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\vi\DuAn1.resources.dll
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\bin\Debug\en\DuAn1.resources.dll
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\bin\Debug\vi\DuAn1.resources.dll
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Lang.en.resources
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Lang.vi.resources
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csproj.CoreCompileInputs.cache
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\en\DuAn1.resources.dll
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\vi\DuAn1.resources.dll

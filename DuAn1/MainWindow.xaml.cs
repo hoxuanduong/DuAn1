@@ -39,6 +39,8 @@ namespace DuAn1
 
             this.DataContext = this;
 
+
+
             cul = CultureInfo.CreateSpecificCulture("vi");
             res_man = new ResourceManager("DuAn1.Lang",Assembly.GetExecutingAssembly());
             update_lang();
@@ -52,6 +54,8 @@ namespace DuAn1
             danhba.Add(new Person() { Name = "Viet", Sdt = "+491712547551" });
             danhba.Add(new Person() { Name = "Tung", Sdt = "+491712547551" });
             lbDanhba.ItemsSource = danhba;
+            this.mnvn.IsChecked = true;
+            this.mnen.IsChecked = false;
         }
 
         private void update_lang()
@@ -145,6 +149,20 @@ namespace DuAn1
                 MessageBox.Show(exc.ToString(), "");
             }
 
+        }
+
+        private void Mnvn_OnChecked(object sender, RoutedEventArgs e)
+        {
+            cul = CultureInfo.CreateSpecificCulture("vi");
+            update_lang();
+            this.mnen.IsChecked = false;
+        }
+
+        private void Mnen_OnChecked(object sender, RoutedEventArgs e)
+        {
+            cul = CultureInfo.CreateSpecificCulture("en");
+            update_lang();
+            this.mnvn.IsChecked = false;
         }
     }
 
