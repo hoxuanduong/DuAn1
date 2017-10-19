@@ -9,11 +9,12 @@
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Dictionary1.xaml"/>
+                <ResourceDictionary Source="Style/Dictionary1.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="200"/>
@@ -21,8 +22,19 @@
         <ToolBar Height="30" Name="menu">
             <Menu Background="Transparent">
                 <MenuItem Name="mnsellang">
-                    <MenuItem Name="mnvn" Header="tieng viet" IsCheckable="True" Checked="Mnvn_OnChecked"/>
-                    <MenuItem Name="mnen" Header="english" IsCheckable="True" Checked="Mnen_OnChecked"/>
+                    <MenuItem Name="mnvn" Header="tieng viet" IsCheckable="True" Checked="Mnvn_OnChecked" Template="{DynamicResource MenuItemControlTemplate1}">
+                        <MenuItem.Icon>
+                                <Image Source="Image/vn_flag.png" Height="20" Width="20"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Name="mnen" Header="english" IsCheckable="True" Checked="Mnen_OnChecked" Template="{DynamicResource MenuItemControlTemplate1}">
+                        <MenuItem.Icon>
+                            <Image Source="Image/en_flag.jpg" Height="20" Width="20"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Name="About" Header="About" Click="About_Click">
+                    
                 </MenuItem>
             </Menu>
         </ToolBar>
@@ -60,12 +72,12 @@
                 </ListBox.ItemTemplate>
             </ListBox>
             <StackPanel Grid.Column="1" Margin="0,2">
-                <Button Name="btDelete" Margin="0,5" Click="btDelete_Click" Style="{StaticResource Style1}"/>
-                <Button Name="btModify" Margin="0,5" Click="btModify_Click" Style="{StaticResource Style1}"/>
-                <Button Name="btNew" Margin="0,5" Click="btNew_Click" Style="{StaticResource Style1}" IsDefault="True"/>
+                <Button Name="btDelete" Content="{Binding Plang[Delete].Traduction}" Margin="0,5" Click="btDelete_Click" Style="{StaticResource Style1}"/>
+                <Button Name="btModify" Content="{Binding Plang[Modify].Traduction}" Margin="0,5" Click="btModify_Click" Style="{StaticResource Style1}"/>
+                <Button Name="btNew" Content="{Binding Plang[New].Traduction}" Margin="0,5" Click="btNew_Click" Style="{StaticResource Style1}" IsDefault="True"/>
 
-                <Button Name="btSave" Margin="0,5" Style="{StaticResource Style1}" Click="btSave_Click"/>
-                <Button Name="btLoad" Margin="0,5" Style="{StaticResource Style1}" Click="btLoad_Click"/>
+                <Button Name="btSave" Content="{Binding Plang[Save].Traduction}" Margin="0,5" Style="{StaticResource Style1}" Click="btSave_Click"/>
+                <Button Name="btLoad" Content="{Binding Plang[Load].Traduction}" Margin="0,5" Style="{StaticResource Style1}" Click="btLoad_Click"/>
 
             </StackPanel>
         </Grid>

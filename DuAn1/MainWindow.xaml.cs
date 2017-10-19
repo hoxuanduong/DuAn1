@@ -20,6 +20,7 @@ using System.Windows.Shapes;
 using System.Xml.Serialization;
 using System.Globalization;
 using System.Resources;
+using System.Security.Cryptography.X509Certificates;
 
 namespace DuAn1
 {
@@ -32,6 +33,12 @@ namespace DuAn1
         //   private AddContact addcontact;
         CultureInfo cul;
         ResourceManager res_man;
+        private PLanglist plang;
+
+        public PLanglist Plang
+        {
+            get => plang;
+        }
 
         public MainWindow()
         {
@@ -39,10 +46,22 @@ namespace DuAn1
 
             this.DataContext = this;
 
+            plang = new PLanglist();
+            
+            Stream str = Assembly.GetExecutingAssembly().GetManifestResourceStream("DuAn1.Lang.vietnamese.xml");
+            if (str == null)
+            {
+                MessageBox.Show("khong load duoc stream trong assembly", "Error", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+            else
+            {
+                plang.Load(str);
+            }
 
 
             cul = CultureInfo.CreateSpecificCulture("vi");
-            res_man = new ResourceManager("DuAn1.Lang",Assembly.GetExecutingAssembly());
+            res_man = new ResourceManager("DuAn1.Resource.Lang",Assembly.GetExecutingAssembly());
             update_lang();
 
             danhba = new ObservableCollection<Person>();
@@ -56,16 +75,13 @@ namespace DuAn1
             lbDanhba.ItemsSource = danhba;
             this.mnvn.IsChecked = true;
             this.mnen.IsChecked = false;
+
         }
 
         private void update_lang()
         {
-            this.btDelete.Content = res_man.GetString("_delete", cul);
-            this.btModify.Content = res_man.GetString("_modify", cul);
-            this.btNew.Content = res_man.GetString("_new", cul);
-            this.btSave.Content = res_man.GetString("_save", cul);
-            this.btLoad.Content = res_man.GetString("_load", cul);
-            this.mnsellang.Header = res_man.GetString("_mnsellang", cul);
+            mnsellang.Header = res_man.GetString("_mnsellang", cul);
+
         }
         private void btDelete_Click(object sender, RoutedEventArgs e)
         {
@@ -155,6 +171,19 @@ namespace DuAn1
         {
             cul = CultureInfo.CreateSpecificCulture("vi");
             update_lang();
+
+
+            Stream str = Assembly.GetExecutingAssembly().GetManifestResourceStream("DuAn1.Lang.vietnamese.xml");
+            if (str == null)
+            {
+                MessageBox.Show("khong load duoc stream trong assembly", "Error", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+            else
+            {
+                plang.Load(str);
+            }
+
             this.mnen.IsChecked = false;
         }
 
@@ -162,7 +191,26 @@ namespace DuAn1
         {
             cul = CultureInfo.CreateSpecificCulture("en");
             update_lang();
+
+
+            Stream str = Assembly.GetExecutingAssembly().GetManifestResourceStream("DuAn1.Lang.english.xml");
+            if (str == null)
+            {
+                MessageBox.Show("khong load duoc stream trong assembly", "Error", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+            else
+            {
+                plang.Load(str);
+            }
+
             this.mnvn.IsChecked = false;
+        }
+
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            About about = new About();
+            about.ShowDialog();
         }
     }
 

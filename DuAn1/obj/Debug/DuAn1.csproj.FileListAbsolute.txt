@@ -11,10 +11,8 @@ C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Pr
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csproj.GenerateResource.Cache
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.exe
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.pdb
-C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\Dictionary1.baml
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\AddContact.g.cs
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\AddContact.baml
-C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csprojResolveAssemblyReference.cache
 C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\bin\Debug\DuAn1.exe.config
 C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\bin\Debug\DuAn1.exe
 C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\bin\Debug\DuAn1.pdb
@@ -40,8 +38,11 @@ C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\en\DuAn1.resources.dll
 C:\Users\xuand\Documents\GitHub\DuAn1\DuAn1\obj\Debug\vi\DuAn1.resources.dll
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\bin\Debug\en\DuAn1.resources.dll
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\bin\Debug\vi\DuAn1.resources.dll
-C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Lang.en.resources
-C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Lang.vi.resources
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csproj.CoreCompileInputs.cache
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\en\DuAn1.resources.dll
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\vi\DuAn1.resources.dll
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\About.g.cs
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\About.baml
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\Style\Dictionary1.baml
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Resource.Lang.en.resources
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Resource.Lang.vi.resources
