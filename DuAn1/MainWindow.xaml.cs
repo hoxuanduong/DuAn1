@@ -21,6 +21,7 @@ using System.Xml.Serialization;
 using System.Globalization;
 using System.Resources;
 using System.Security.Cryptography.X509Certificates;
+using System.Windows.Markup;
 
 namespace DuAn1
 {
@@ -45,7 +46,7 @@ namespace DuAn1
             InitializeComponent();
 
             this.DataContext = this;
-
+            //use embedded resource xml file to binding language
             plang = new PLanglist();
             
             Stream str = Assembly.GetExecutingAssembly().GetManifestResourceStream("DuAn1.Lang.vietnamese.xml");
@@ -59,7 +60,7 @@ namespace DuAn1
                 plang.Load(str);
             }
 
-
+            // switch language by Culture Info
             cul = CultureInfo.CreateSpecificCulture("vi");
             res_man = new ResourceManager("DuAn1.Resource.Lang",Assembly.GetExecutingAssembly());
             update_lang();
@@ -76,6 +77,20 @@ namespace DuAn1
             this.mnvn.IsChecked = true;
             this.mnen.IsChecked = false;
 
+            //test read Xaml file from code behind
+            Window window = null;
+
+            using (FileStream fs = new FileStream(@"../../Window1.xaml", FileMode.Open, FileAccess.Read))
+            {
+                window = (Window) XamlReader.Load(fs);
+            }
+
+            Button testButton = (Button) window.FindName("btTest");
+              
+
+            testButton.Content = "tested";
+
+            window.ShowDialog();
         }
 
         private void update_lang()

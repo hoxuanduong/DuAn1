@@ -46,3 +46,5 @@ C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\About.ba
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\Style\Dictionary1.baml
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Resource.Lang.en.resources
 C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.Resource.Lang.vi.resources
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\DuAn1.csprojResolveAssemblyReference.cache
+C:\Users\XuanDuong.Ho\Desktop\Du An Hoc Lap Trinh\DuAn1\DuAn1\obj\Debug\Window1.baml

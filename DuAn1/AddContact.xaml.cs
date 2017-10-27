@@ -129,5 +129,20 @@ namespace DuAn1
                 tbImagePath.Text = openfile.FileName;
             }
         }
+
+        private void CommandBinding_OnCanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
+
+        private void CommandBinding_OnExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            this.Close();
+        }
+    }
+
+    public static class CustomCommand
+    {
+        public static readonly RoutedUICommand Exit = new RoutedUICommand("Exit","Exit",typeof(CustomCommand));
     }
 }

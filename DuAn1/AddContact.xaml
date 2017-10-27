@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:DuAn1"
         mc:Ignorable="d"
         Title="AddContact" Height="200" Width="250">
-    
+    <Window.CommandBindings>
+        <CommandBinding Command="local:CustomCommand.Exit" CanExecute="CommandBinding_OnCanExecute" Executed="CommandBinding_OnExecuted" ></CommandBinding>
+    </Window.CommandBindings>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="66"/>
@@ -29,8 +31,16 @@
         <TextBox Name="tbPhone" FontSize="12" Grid.Row ="3" Grid.ColumnSpan="3" VerticalAlignment="Center" Margin="1"/>
         <TextBlock Name="tbImagePath" FontSize="12" Grid.Row ="5" Grid.ColumnSpan="3" VerticalAlignment="Center"/>
         <Button Name="btSelImg" Content="Select Image" Grid.Row="4" Grid.ColumnSpan="2" Width="Auto" Click="btSelImg_Click"/>
-        <Button Name="btOk" Grid.Column="2" Grid.Row="6" Content="OK" FontSize="12" Width="50" Margin="1" HorizontalAlignment="Left" Height="20" Click="btOk_Click" IsDefault="True"/>
-        <Button Name="btCancel" Grid.Column="2" Grid.Row="6" Content="Cancel" FontSize="12" Width="50" Margin="1" HorizontalAlignment="Right" Height="20" Click="btCancel_Click"/>
-        
+        <ToolBar Name="tbTest" Height="40" Band="2" Grid.Row="6" Grid.ColumnSpan="3">
+            <WrapPanel>
+                <Button Name="btOk" Content="OK" FontSize="12" Margin="5" HorizontalAlignment="Left" Height="20" Click="btOk_Click" IsDefault="True"/>
+                <Button Name="btCancel" Content="Cancel" FontSize="12" Margin="5" HorizontalAlignment="Right" Height="20" Click="btCancel_Click"/>
+                <Button Name="cpCopy" Content="Copy" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Center" Command="ApplicationCommands.Copy"/>
+                <Button Name="cpPaste" Content="Paste" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Center" Command="ApplicationCommands.Paste"/>
+                <Button Name="Exit" Content="Exit" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Center" Command="local:CustomCommand.Exit"/>
+
+            </WrapPanel>
+
+        </ToolBar>
     </Grid>
 </Window>
